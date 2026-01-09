@@ -1,0 +1,97 @@
+﻿@{
+    ViewData["Title"] = "Registrarse";
+    ViewData["HideNavbar"] = true; // ← Ocultar navbar y footer
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/login.css" />
+}
+
+<section class="h-100 gradient-form" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-10">
+                <div class="card rounded-3 text-black">
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <div class="card-body p-md-5 mx-md-4">
+
+                                <div class="text-center">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                                         style="width: 185px;" alt="logo">
+                                    <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
+                                </div>
+
+                                <div>
+                                    <p>Create your account</p>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="nombreUsuario" class="form-control"
+                                               placeholder="Enter your username" />
+                                        <label class="form-label" for="nombreUsuario">
+                                            <i class="bi bi-person"></i> Username
+                                        </label>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="contrasena" class="form-control"
+                                               placeholder="Enter your password" />
+                                        <label class="form-label" for="contrasena">
+                                            <i class="bi bi-lock"></i> Password
+                                        </label>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="confirmarContrasena" class="form-control"
+                                               placeholder="Confirm your password" />
+                                        <label class="form-label" for="confirmarContrasena">
+                                            <i class="bi bi-lock-fill"></i> Confirm Password
+                                        </label>
+                                    </div>
+
+                                    <div class="text-center pt-1 mb-5 pb-1">
+                                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 w-100" 
+                                                type="button" id="btnRegister">
+                                            <i class="bi bi-person-plus"></i> Register
+                                        </button>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-center pb-4">
+                                        <p class="mb-0 me-2">Already have an account?</p>
+                                        <a href="/Login" class="btn btn-outline-primary">
+                                            <i class="bi bi-box-arrow-in-right"></i> Login
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                            <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                <h4 class="mb-4">Join our community</h4>
+                                <p class="small mb-0">
+                                    Create your account and get access to all our amazing features.
+                                    We're committed to providing you with the best experience possible.
+                                    Start your journey with us today!
+                                </p>
+                                <div class="mt-4">
+                                    <h5 class="mb-3">Why join us?</h5>
+                                    <ul class="small">
+                                        <li><i class="bi bi-check-circle-fill me-2"></i>Easy to use platform</li>
+                                        <li><i class="bi bi-check-circle-fill me-2"></i>Secure and reliable</li>
+                                        <li><i class="bi bi-check-circle-fill me-2"></i>24/7 support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="~/js/pages/register.js"></script>
+}
